@@ -1,0 +1,11 @@
+# Python 3.10.12. Source revision used by the course's release/4.1.0 branch.
+setuptools==80.10.2
+torch==2.8.0
+numpy==1.23.5
+protobuf==3.20.3
+onnx==1.15.0
+tensorboard==2.20.0
+matplotlib==3.10.6
+mlagents-envs @ git+https://github.com/Unity-Technologies/ml-agents.git@4cd1badf62d9663fcab12fc278b2dab4d3c9209e#subdirectory=ml-agents-envs
+mlagents @ git+https://github.com/Unity-Technologies/ml-agents.git@4cd1badf62d9663fcab12fc278b2dab4d3c9209e#subdirectory=ml-agents
+

@@ -1,0 +1,14 @@
+{
+  "source": "results/flappy3d-final-v6/FlappyBird3D/checkpoint.pt",
+  "destination": "results/flappy3d-transfer-11obs/FlappyBird3D/checkpoint.pt",
+  "old_observations": 12,
+  "new_observations": 11,
+  "removed_index": 10,
+  "fixed_original_life_feature": 0.5,
+  "tested_vectors": 10000,
+  "max_hidden_error": {
+    "Policy": 4.76837158203125e-06,
+    "Optimizer:critic": 3.337860107421875e-06
+  },
+  "same_deterministic_actions": true
+}

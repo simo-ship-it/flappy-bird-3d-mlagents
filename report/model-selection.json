@@ -1,0 +1,20 @@
+{
+  "selected_run": "flappy3d-final-v7",
+  "initialization": "flappy3d-transfer-11obs",
+  "transferred_from": "flappy3d-final-v6",
+  "model": "Assets/Models/FlappyBird3D.onnx",
+  "sha256": "1442ed0aba1df28e0cb79cc06d04a925846b078a2ef93ce4a07be5ff708a24ba",
+  "summary_step": 500000,
+  "observations": 11,
+  "prize_reward": 5,
+  "collision_penalty": 10,
+  "alignment_reward": 0.3,
+  "initial_lives": 1,
+  "evaluation_seed": 13007,
+  "evaluation_episodes": 30,
+  "discarded_runs": {
+    "diagnostic-v1-rail-test": "lateral escape",
+    "diagnostic-v3-prize-respawn": "repeated prizes after respawn",
+    "flappy3d-final-v4": "one collision per collected prize"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "game": {
+    "frames": 1050,
+    "fps": 30,
+    "pipes": 18,
+    "prizes": 6,
+    "collisions": 0,
+    "seed": 2026
+  },
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_frames": "1050"
+      }
+    ],
+    "format": {
+      "duration": "35.000000",
+      "size": "2964074"
+    }
+  }
+}

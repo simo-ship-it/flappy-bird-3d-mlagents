@@ -1,0 +1,284 @@
+{
+    "seed": 2026,
+    "targetPipes": 40,
+    "episodes": 30,
+    "completedTarget": 30,
+    "cleanTarget": 29,
+    "controller": "trained-ONNX",
+    "meanPipes": 40.0,
+    "meanSeconds": 73.24771118164063,
+    "meanPrizes": 0.03333333507180214,
+    "meanCollisions": 0.03333333507180214,
+    "trials": [
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 152,
+            "seconds": 76.77912902832031,
+            "reward": 47.679683685302734,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 149,
+            "seconds": 75.41935729980469,
+            "reward": 47.53969192504883,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 147,
+            "seconds": 74.09957885742188,
+            "reward": 47.40969467163086,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 144,
+            "seconds": 72.81979370117188,
+            "reward": 47.289710998535156,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 142,
+            "seconds": 71.5999984741211,
+            "reward": 47.159732818603516,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 140,
+            "seconds": 70.42019653320313,
+            "reward": 47.03974151611328,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 137,
+            "seconds": 69.26039123535156,
+            "reward": 46.91974639892578,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 135,
+            "seconds": 68.16057586669922,
+            "reward": 46.81975173950195,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 133,
+            "seconds": 67.08075714111328,
+            "reward": 46.709754943847656,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 160,
+            "seconds": 80.5984878540039,
+            "reward": 48.059669494628906,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 157,
+            "seconds": 79.09873962402344,
+            "reward": 47.909671783447266,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 154,
+            "seconds": 77.63898468017578,
+            "reward": 47.759681701660156,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 151,
+            "seconds": 76.25921630859375,
+            "reward": 47.62968444824219,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 148,
+            "seconds": 74.89944458007813,
+            "reward": 47.48969268798828,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 146,
+            "seconds": 73.61965942382813,
+            "reward": 47.35969924926758,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 143,
+            "seconds": 72.35987091064453,
+            "reward": 47.23971939086914,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 141,
+            "seconds": 71.14007568359375,
+            "reward": 47.1097412109375,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 138,
+            "seconds": 69.98027038574219,
+            "reward": 46.99974822998047,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 136,
+            "seconds": 68.84046173095703,
+            "reward": 46.8797492980957,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 1,
+            "collisions": 1,
+            "flaps": 135,
+            "seconds": 69.62033081054688,
+            "reward": 45.45979309082031,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 132,
+            "seconds": 66.68082427978516,
+            "reward": 46.66975784301758,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 158,
+            "seconds": 80.01858520507813,
+            "reward": 47.999671936035156,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 156,
+            "seconds": 78.53883361816406,
+            "reward": 47.859676361083984,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 153,
+            "seconds": 77.09907531738281,
+            "reward": 47.70968246459961,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 150,
+            "seconds": 75.73930358886719,
+            "reward": 47.56968688964844,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 147,
+            "seconds": 74.39952850341797,
+            "reward": 47.439693450927734,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 145,
+            "seconds": 73.11974334716797,
+            "reward": 47.30970764160156,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 142,
+            "seconds": 71.89994812011719,
+            "reward": 47.189727783203125,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 140,
+            "seconds": 70.70014953613281,
+            "reward": 47.069740295410156,
+            "reason": "target"
+        },
+        {
+            "pipes": 40,
+            "prizes": 0,
+            "collisions": 0,
+            "flaps": 138,
+            "seconds": 69.54034423828125,
+            "reward": 46.959747314453125,
+            "reason": "target"
+        }
+    ]
+}

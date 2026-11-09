@@ -1,0 +1,15 @@
+Flappy Bird 3D - esercizio facoltativo ML-Agents
+
+Il gioco riprende il Flappy Bird 3D del Lab 3 e usa gli asset Sparrow e Pipe
+forniti nel corso. L'agente è stato addestrato con PPO e decide quando battere
+le ali per attraversare i tubi. Le sfere dorate aggiungono una vita, mentre
+ogni collisione ne consuma una.
+
+La rete usa posizione e velocità del passerotto, insieme alle informazioni
+sui prossimi tubi e premi.
+
+Nel test finale l'agente ha raggiunto 40 tubi in tutte le 30 partite, senza
+collisioni. I premi raccolti sono stati in media circa 13 per partita.
+
+Progetto: https://github.com/simo-ship-it/flappy-bird-3d-mlagents
+Video: https://github.com/simo-ship-it/flappy-bird-3d-mlagents/blob/main/consegna/FlappyBird3D-demo.mp4
