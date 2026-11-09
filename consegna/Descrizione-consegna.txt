@@ -1,15 +1,15 @@
-Flappy Bird 3D - esercizio facoltativo ML-Agents
+Flappy Bird 3D - optional ML-Agents assignment
 
-Il gioco riprende il Flappy Bird 3D del Lab 3 e usa gli asset Sparrow e Pipe
-forniti nel corso. L'agente è stato addestrato con PPO e decide quando battere
-le ali per attraversare i tubi. Le sfere dorate aggiungono una vita, mentre
-ogni collisione ne consuma una.
+The game builds on Flappy Bird 3D from Lab 3 and uses the Sparrow and Pipe assets
+provided in the course. The agent was trained with PPO and decides when to flap
+to pass through the pipes. Golden orbs grant extra lives, while each collision
+costs one life.
 
-La rete usa posizione e velocità del passerotto, insieme alle informazioni
-sui prossimi tubi e premi.
+The network uses the bird's position and velocity, together with information
+about the upcoming pipes and prizes.
 
-Nel test finale l'agente ha raggiunto 40 tubi in tutte le 30 partite, senza
-collisioni. I premi raccolti sono stati in media circa 13 per partita.
+In the final evaluation, the agent cleared 40 pipe pairs in all 30 runs
+without a collision. It collected an average of about 13 prizes per run.
 
-Progetto: https://github.com/simo-ship-it/flappy-bird-3d-mlagents
+Project: https://github.com/simo-ship-it/flappy-bird-3d-mlagents
 Video: https://github.com/simo-ship-it/flappy-bird-3d-mlagents/blob/main/consegna/FlappyBird3D-demo.mp4

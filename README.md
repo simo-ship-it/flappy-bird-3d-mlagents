@@ -1,76 +1,78 @@
 # Flappy Bird 3D
 
-Flappy Bird 3D del Lab 3, esteso per l'esercizio facoltativo di Unity ML-Agents.
-L'agente è addestrato con PPO: attraversa i tubi e raccoglie le sfere dorate
-che aggiungono vite.
+Flappy Bird 3D from Lab 3, extended for the optional Unity ML-Agents assignment.
+The agent was trained with PPO to fly through the pipes and collect golden
+orbs that grant extra lives.
 
-[![Una partita dell'agente](consegna/anteprima.png)](consegna/FlappyBird3D-demo.mp4)
+[![A run by the trained agent](consegna/anteprima.png)](consegna/FlappyBird3D-demo.mp4)
 
-[Video di 35 secondi](consegna/FlappyBird3D-demo.mp4) ·
-[Relazione](report/Relazione-FlappyBird3D.md)
+[35-second video](consegna/FlappyBird3D-demo.mp4) ·
+[Report](report/Relazione-FlappyBird3D.md)
 
-## Aprire il progetto
+## Opening the project
 
-Il progetto usa **Unity 6000.6.2f1** e **ML-Agents 4.2.0**.
-Clona il repository, aggiungi la cartella in Unity Hub con
-**Add > Add project from disk** e apri una delle scene in Assets/Scenes:
+The project uses **Unity 6000.6.2f1** and **ML-Agents 4.2.0**.
+Clone the repository, add the folder in Unity Hub with
+**Add > Add project from disk**, and open a scene in Assets/Scenes:
 
-| Scena | Uso |
+| Scene | Purpose |
 |---|---|
-| Inference.unity | Osservare l'agente già addestrato |
-| Lab3Tutorial.unity | Giocare con frecce e barra spaziatrice |
-| Training.unity | Allenare l'agente nei 24 ambienti |
+| Inference.unity | Watch the trained agent |
+| Lab3Tutorial.unity | Play using the arrow keys and Space |
+| Training.unity | Train the agent in 24 parallel environments |
 
-Premi Play per avviare la scena. Le arene si attivano all'avvio.
-Il modello ONNX è già incluso in Assets/Models; per eseguirlo in Unity
-non serve avviare Python.
+Press Play to start the scene. The arenas activate at startup.
+The ONNX model is included in Assets/Models and runs in Unity without
+starting the Python trainer.
 
-## Regole
+## Game rules
 
-Si parte con una vita. Una sfera dorata ogni tre coppie di tubi ne aggiunge una;
-una collisione ne consuma una. Se restano vite, il volo riparte mantenendo il
-punteggio. Un premio già raccolto non ricompare alla ripartenza.
+Each run starts with one life. A golden orb appears every three pipe pairs
+and grants one extra life. Each collision costs one life. If any lives remain,
+the bird restarts while keeping its score. Collected prizes do not reappear
+after a restart.
 
-Il gioco manuale mantiene il movimento libero del Lab 3. Con l'agente, il volo
-resta sul piano verticale e i tubi vanno attraversati passando nei varchi.
-La rete usa 11 osservazioni su posizione, velocità, tubi e premi e sceglie se
-battere le ali. Ricompense e prove di addestramento sono descritte nella relazione.
+The manual game keeps the free movement used in Lab 3. In agent mode, flight
+is restricted to a vertical plane and the bird has to pass through the gaps.
+The network uses 11 observations about position, velocity, pipes and prizes
+to decide whether to flap. Rewards and training experiments are described
+in the report.
 
-Gli asset Sparrow e Pipe sono quelli forniti nel corso. I materiali importati
-usano lo shader Standard; il pavimento è marrone uniforme.
+Sparrow and Pipe are the assets provided in the course. Imported materials
+use the Standard shader, and the floor is plain brown.
 
-## Risultati
+## Results
 
-Il modello ha raggiunto 40 tubi in tutte le 30 partite del test, senza collisioni,
-con una media di circa 13 premi. Il confronto casuale non ha raggiunto 40 tubi
-in nessuna delle 30 partite. I dati delle singole prove e i grafici sono in report.
+The model reached 40 pipe pairs in all 30 evaluation runs, with no collisions
+and an average of about 13 prizes per run. The random baseline reached
+40 pipe pairs in none of its 30 runs. Individual results and plots are in report.
 
-La valutazione usa seed base 13007 e un limite di 120 secondi simulati.
-Il limite di 40 tubi serve al test: nel gioco normale la partita continua
-finché restano vite.
+Evaluation uses base seed 13007 and a limit of 120 simulated seconds.
+The 40-pair limit is only for evaluation: the normal game continues as long
+as lives remain.
 
-## Ripetere l'allenamento
+## Repeating the training
 
-Con un ambiente Python 3.10.12 attivo:
+With a Python 3.10.12 environment active:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Dal menu Unity **Flappy Lab > Prepare tutorial and training** compila
-l'app di training per Mac. Poi, dalla cartella del progetto:
+In Unity, use **Flappy Lab > Prepare tutorial and training** to build the
+training app for Mac. Then run these commands from the project folder:
 
 ```bash
 python scripts/prepare_transfer.py
 python scripts/train.py --run-id flappy3d-replica
 ```
 
-Il checkpoint v6 necessario al trasferimento è incluso. Il primo script prepara
-la rete a 11 osservazioni; il secondo la allena con config/flappy-prizes.yaml.
-Per riprendere una replica interrotta, aggiungi --resume con lo stesso run-id.
-**Flappy Lab > Build trained game** ricompila il gioco con il modello aggiornato.
+The v6 checkpoint needed for the transfer is included. The first script prepares
+the 11-observation network; the second trains it with config/flappy-prizes.yaml.
+To resume an interrupted run, add --resume and use the same run ID.
+**Flappy Lab > Build trained game** rebuilds the game with the updated model.
 
-Per ripetere i controlli, dopo aver compilato le app per Mac:
+To repeat the checks after building the Mac apps:
 
 ```bash
 python scripts/verify_game.py mechanics
@@ -78,5 +80,5 @@ python scripts/verify_game.py random
 python scripts/verify_game.py trained
 ```
 
-Nel repository sono inclusi sorgenti, modello, configurazioni, risultati e video.
-Unity ricrea le cartelle di cache e le build rimangono locali.
+The repository contains the source project, model, configurations, results and
+video. Unity recreates its cache folders, and builds are kept locally.
